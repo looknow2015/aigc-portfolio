@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人作品集 | 视觉设计与品牌体验</title>
+    <meta
+      name="description"
+      content="一个以中文内容为主的视觉设计师作品集网站，展示品牌识别、艺术指导、数字体验与影像创作。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="回到首页">
+        <span class="brand-mark">设</span>
+        <span>知见知行/ LOOKNOW</span>
+      </a>
+      <nav class="desktop-nav" aria-label="主导航">
+        <a href="#work">作品</a>
+        <a href="#about">关于</a>
+        <a href="#contact">联系</a>
+      </nav>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="menuPanel">
+        菜单
+      </button>
+    </header>
+
+    <aside class="menu-panel" id="menuPanel" aria-hidden="true">
+      <div class="menu-panel-inner">
+        <button class="menu-close" type="button">关闭</button>
+        <a href="#work">精选作品</a>
+        <a href="#about">关于我</a>
+        <a href="#contact">联系合作</a>
+      </div>
+    </aside>
+
+    <main id="home">
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="hero-copy">
+          <p class="eyebrow">被知道/ 让看见</p>
+          <h1 id="heroTitle">
+            以新面貌被知道，让新的目光看见
+          </h1>
+          <p class="hero-description">
+            当AIGC浪潮涌来，我们不回避，而是以经年积淀驯化技术——让AI的痕迹消隐于匠心之后。为品牌交付无痕的创意、有温度的表达。用AI，而不见AI。
+          </p>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <img
+            src="images/home-cover.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="服务方向">
+        <div class="ticker-track">
+          <span>品牌识别 Brand Identity</span>
+          <span>艺术指导 Art Direction</span>
+          <span>活动视觉 Campaign Design</span>
+          <span>AI 影像 AI Visuals</span>
+          <span>数字体验 Digital Experience</span>
+          <span>动态设计 Motion</span>
+          <span>编辑设计 Editorial</span>
+          <span>品牌识别 Brand Identity</span>
+          <span>艺术指导 Art Direction</span>
+          <span>活动视觉 Campaign Design</span>
+        </div>
+      </section>
+
+      <section class="work-section" id="work" aria-labelledby="workTitle">
+        <div class="section-heading">
+          <p class="eyebrow">精选作品 / Selected Projects</p>
+          <h2 id="workTitle">拖动、滚动或轻触，浏览我的项目档案。</h2>
+        </div>
+        <div class="horizontal-stage" data-horizontal-stage>
+          <div class="work-track" data-work-track></div>
+        </div>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="aboutTitle">
+        <div>
+          <p class="eyebrow">关于 / About</p>
+          <h2 id="aboutTitle">我关注视觉气质，也关注信息是否被清楚地看见。</h2>
+        </div>
+        <p>
+          这里可以写你的设计理念、服务方向、客户类型、奖项或个人经历。建议保持克制，
+          用几句话说明你是谁、擅长什么、为什么适合被合作方选择。
+        </p>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contactTitle">
+        <p class="eyebrow">开放少量合作 / Available for selected projects</p>
+        <h2 id="contactTitle">如果你正在准备一个值得认真对待的项目，我们可以聊聊。</h2>
+        <a href="mailto:hello@example.com">hello@example.com</a>
+      </section>
+    </main>
+
+    <script src="projects-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
