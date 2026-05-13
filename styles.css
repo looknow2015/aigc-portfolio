@@ -636,12 +636,16 @@ h1 {
 
   .project-gallery {
     grid-template-columns: 1fr;
+    gap: 18px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 
   .gallery-item,
   .gallery-item.is-portrait {
     grid-column: auto;
-    min-height: 74vh;
+    width: 100%;
+    min-height: 0;
   }
 
   .project-nav {
