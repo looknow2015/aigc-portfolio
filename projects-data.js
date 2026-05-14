@@ -54,6 +54,9 @@ window.projects = [
     role: "网页视觉 / 交互方向 / 原型设计",
     client: "数字产品",
     image: "images/project-03-cover.jpg",
+    video: "videos/project-06.mp4",
+    videoPoster: "images/video poster-06.jpg",
+    videoTitle: "ETF产品名换新视频",
     description: "一个以大幅图像、滚动节奏和安静导航为核心的网站体验概念。",
     concept:
       "这个案例重点展示网站体验的节奏：首屏如何吸引用户、作品如何被浏览、信息如何在动效中保持清晰。",
