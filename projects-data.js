@@ -24,6 +24,9 @@ window.projects = [
       "images/project-01-7.jpg",
       "images/project-01-8.jpg",
       "images/project-01-9.jpg",
+      "images/project-01-10.jpg",
+      "images/project-01-11.jpg",
+      "images/project-01-12.jpg",
     ],
   },
   {
