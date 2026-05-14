@@ -18,10 +18,16 @@ window.projects = [
       "images/project-01-1.jpg",
       "images/project-01-2.jpg",
       "images/project-01-3.jpg",
+      "images/project-01-4.jpg",
+      "images/project-01-5.jpg",
+      "images/project-01-6.jpg",
+      "images/project-01-7.jpg",
+      "images/project-01-8.jpg",
+      "images/project-01-9.jpg",
     ],
   },
   {
-    title: "生长索引",
+    title: "工银瑞信基金",
     category: "品牌识别",
     year: "2025",
     role: "品牌策略 / 标识 / 视觉规范",
@@ -29,7 +35,7 @@ window.projects = [
     image: "images/project-02-cover.jpg",
     video: "videos/project-01.mp4",
     videoPoster: "images/video poster-01.jpg",
-    videoTitle: "生长索引动态展示",
+    videoTitle: "固收品牌月度海报/视频",
     description: "为文化类品牌建立的弹性视觉系统，包含标识、版式、网格和图像使用规则。",
     concept:
       "项目从“生长”和“索引”两个关键词出发，建立可扩展的版式系统。这里可以写你的调研、关键词、草图过程和设计推导。",
@@ -42,7 +48,7 @@ window.projects = [
     ],
   },
   {
-    title: "信号房间",
+    title: "国联安基金",
     category: "数字体验",
     year: "2025",
     role: "网页视觉 / 交互方向 / 原型设计",
@@ -54,9 +60,8 @@ window.projects = [
     outcome:
       "页面以横向浏览和沉浸式图像为核心，配合简洁导航和微动效，让作品展示更接近编辑杂志的阅读体验。",
     gallery: [
-      "https://picsum.photos/id/1048/1600/1100",
-      "https://picsum.photos/id/1050/1400/1700",
-      "https://picsum.photos/id/1052/1600/1200",
+      "images/project-03-1.jpg",
+      "images/project-03-2.jpg",
     ],
   },
   {

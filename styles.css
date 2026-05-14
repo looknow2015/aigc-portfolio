@@ -489,16 +489,19 @@ h1 {
 }
 
 .video-heading {
+  width: min(100%, 860px);
+  margin: 0 auto;
   padding-right: 0;
   padding-left: 0;
 }
 
 .project-video video {
   display: block;
-  width: 100%;
+  width: min(100%, 860px);
   max-height: 86vh;
-  aspect-ratio: 16 / 9;
-  background: var(--ink);
+  margin: 0 auto;
+  aspect-ratio: 9 / 16;
+  background: #ccc;
   object-fit: contain;
 }
 
