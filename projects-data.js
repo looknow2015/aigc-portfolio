@@ -25,8 +25,11 @@ window.projects = [
     category: "品牌识别",
     year: "2025",
     role: "品牌策略 / 标识 / 视觉规范",
-    client: "文化品牌",
+    client: "工银瑞信基金",
     image: "images/project-02-cover.jpg",
+    video: "videos/project-01.mp4",
+    videoPoster: "images/video poster-01.jpg",
+    videoTitle: "生长索引动态展示",
     description: "为文化类品牌建立的弹性视觉系统，包含标识、版式、网格和图像使用规则。",
     concept:
       "项目从“生长”和“索引”两个关键词出发，建立可扩展的版式系统。这里可以写你的调研、关键词、草图过程和设计推导。",
