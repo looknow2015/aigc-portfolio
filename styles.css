@@ -495,11 +495,26 @@ h1 {
   padding-left: 0;
 }
 
-.project-video video {
-  display: block;
+.project-video-list {
+  display: grid;
+  gap: 42px;
+}
+
+.project-video-item {
   width: min(100%, 860px);
-  max-height: 86vh;
   margin: 0 auto;
+}
+
+.project-video-item figcaption {
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.project-video-item video {
+  display: block;
+  width: 100%;
+  max-height: 86vh;
   aspect-ratio: 9 / 16;
   background: #ccc;
   object-fit: contain;
@@ -632,7 +647,7 @@ h1 {
     min-height: 0;
   }
 
-  .project-video video {
+  .project-video-item video {
     max-height: 70vh;
     aspect-ratio: 4 / 5;
   }

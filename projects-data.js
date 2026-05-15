@@ -6,9 +6,18 @@ window.projects = [
     role: "创意文案/海报设计",
     client: "富国基金",
     image: "images/project-01-cover.jpg",
-    video: "",
-    videoPoster: "images/project-01-cover.jpg",
-    videoTitle: "富国价值回报视频案例",
+    videos: [
+      {
+        title: "富国价值回报视频案例 01",
+        src: "",
+        poster: "images/project-01-cover.jpg",
+      },
+      {
+        title: "富国价值回报视频案例 02",
+        src: "",
+        poster: "images/project-01-cover.jpg",
+      },
+    ],
     description: "围绕克制的色彩、强对比影像和产品细节建立的一组活动视觉方向。",
     concept:
       "这个案例适合展示一套完整的活动视觉：从核心画面、字体比例、图像裁切，到线下物料与社交媒体的延展。你可以把这里替换成项目背景、目标受众和你的设计判断。",
@@ -36,18 +45,40 @@ window.projects = [
     role: "品牌策略 / 标识 / 视觉规范",
     client: "工银瑞信基金",
     image: "images/project-02-cover.jpg",
-    video: "videos/project-01.mp4",
-    videoPoster: "images/video poster-01.jpg",
-    videoTitle: "固收品牌月度海报/视频",
+    videos: [
+      {
+        title: "固收品牌月度海报/视频-1月",
+        src: "videos/project-01.mp4",
+        poster: "images/video poster-01.jpg",
+      },
+      {
+        title: "固收品牌月度海报/视频-2月",
+        src: "videos/project-02.mp4",
+        poster: "images/video poster-02.jpg",
+      },
+      {
+        title: "固收品牌月度海报/视频-3月",
+        src: "videos/project-03.mp4",
+        poster: "images/video poster-03.jpg",
+      },
+      {
+        title: "固收品牌月度海报/视频-4月",
+        src: "videos/project-04.mp4",
+        poster: "images/video poster-04.jpg",
+      },
+      {
+        title: "固收品牌月度海报/视频-5月",
+        src: "videos/project-05.mp4",
+        poster: "images/video poster-05.jpg",
+      },
+    ],
     description: "为文化类品牌建立的弹性视觉系统，包含标识、版式、网格和图像使用规则。",
     concept:
       "项目从“生长”和“索引”两个关键词出发，建立可扩展的版式系统。这里可以写你的调研、关键词、草图过程和设计推导。",
     outcome:
       "系统覆盖品牌主视觉、活动海报、社交媒体模板、文档封面和空间导视，确保不同场景下都能保持统一气质。",
     gallery: [
-      "https://picsum.photos/id/1020/1600/1100",
-      "https://picsum.photos/id/1024/1400/1700",
-      "https://picsum.photos/id/1055/1600/1200",
+      "images/project-02-1.jpg",
     ],
   },
   {
@@ -125,21 +156,22 @@ window.projects = [
     ],
   },
   {
-    title: "柔软机器",
+    title: "海富通基金",
     category: "动态设计",
     year: "2025",
     role: "动态语言 / 分镜 / 社媒动效",
     client: "科技品牌",
     image: "images/project-07-cover.jpg",
+    video: "videos/project-07.mp4",
+    videoPoster: "images/video poster-07.png",
+    videoTitle: "反洗钱投教视频",
     description: "为发布物料、社交媒体片段和网页转场设定的一套动态语言。",
     concept:
       "通过柔和速度曲线、机械节奏和材质变化，让科技内容不显得冰冷，同时保留精密感。",
     outcome:
       "完成一套可用于发布视频、网页交互、社交媒体短片和现场屏幕的动态规范。",
     gallery: [
-      "https://picsum.photos/id/1084/1600/1100",
-      "https://picsum.photos/id/1085/1400/1700",
-      "https://picsum.photos/id/1083/1600/1200",
+      "images/project-07-1.jpg",
     ],
   },
   {

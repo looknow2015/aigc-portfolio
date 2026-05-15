@@ -14,8 +14,7 @@ const client = document.querySelector("[data-project-client]");
 const concept = document.querySelector("[data-project-concept]");
 const outcome = document.querySelector("[data-project-outcome]");
 const videoSection = document.querySelector("[data-project-video-section]");
-const video = document.querySelector("[data-project-video]");
-const videoTitle = document.querySelector("[data-project-video-title]");
+const videos = document.querySelector("[data-project-videos]");
 const gallery = document.querySelector("[data-project-gallery]");
 const prev = document.querySelector("[data-prev-project]");
 const next = document.querySelector("[data-next-project]");
@@ -32,13 +31,30 @@ client.textContent = project.client;
 concept.textContent = project.concept;
 outcome.textContent = project.outcome;
 
-if (project.video) {
+const projectVideos = project.videos || (project.video ? [
+  {
+    title: project.videoTitle || `${project.title} 视频展示`,
+    src: project.video,
+    poster: project.videoPoster || project.image,
+  },
+] : []);
+const visibleVideos = projectVideos.filter((item) => item.src);
+
+if (visibleVideos.length > 0) {
   videoSection.hidden = false;
-  video.src = project.video;
-  video.poster = project.videoPoster || project.image;
-  videoTitle.textContent = project.videoTitle || `${project.title} 视频展示`;
+  videos.innerHTML = visibleVideos
+    .map(
+      (item, index) => `
+        <figure class="project-video-item">
+          <figcaption>${item.title || `视频 ${index + 1}`}</figcaption>
+          <video src="${item.src}" poster="${item.poster || project.image}" controls playsinline preload="metadata"></video>
+        </figure>
+      `
+    )
+    .join("");
 } else {
   videoSection.hidden = true;
+  videos.innerHTML = "";
 }
 
 gallery.innerHTML = project.gallery
