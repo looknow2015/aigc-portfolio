@@ -476,8 +476,8 @@ h1 {
 
 .project-story p:last-child {
   color: var(--muted);
-  font-size: clamp(22px, 2.6vw, 38px);
-  line-height: 1.78;
+  font-size: clamp(15px, 1.7vw, 25px);
+  line-height: 1.85;
 }
 
 .project-video {
