@@ -170,22 +170,4 @@ window.projects = [
       
     ],
   },
-  {
-    title: "万通保险",
-    category: "品牌系统",
-    year: "2025-2026",
-    role: "视觉规范 / 物料延展 / 图像规则",
-    client: "创意机构",
-    image: "images/project-08-cover.jpg",
-    description: "以清晰字体、丰富图像规则和克制配色构成的品牌世界。",
-    concept:
-      "项目强调真实记录感，用清晰的文字系统和图像规则组织品牌内容，让信息更可靠也更有温度。",
-    outcome:
-      "系统适配官网、提案文件、名片、社交媒体和活动物料，便于团队长期维护。",
-    gallery: [
-      "https://picsum.photos/id/1036/1600/1100",
-      "https://picsum.photos/id/1039/1400/1700",
-      "https://picsum.photos/id/1040/1600/1200",
-    ],
-  },
 ];
