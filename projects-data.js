@@ -6,16 +6,17 @@ window.projects = [
     role: "创意文案/海报设计",
     client: "富国基金",
     image: "images/project-01-cover.jpg",
+    videoAfterGallery: true,
     videos: [
       {
-        title: "富国价值回报视频案例 01",
-        src: "",
-        poster: "images/project-01-cover.jpg",
+        title: "富国基金视频案例 01",
+        src: "videos/project-08.mp4",
+        poster: "images/video poster-08.png",
       },
       {
-        title: "富国价值回报视频案例 02",
-        src: "",
-        poster: "images/project-01-cover.jpg",
+        title: "富国基金视频案例 02",
+        src: "videos/project-09.mp4",
+        poster: "images/video poster-09.png",
       },
     ],
     description: "以人机共织的笔触，消弭算法痕迹，让多元视觉自然生长。",

@@ -15,6 +15,7 @@ const concept = document.querySelector("[data-project-concept]");
 const outcome = document.querySelector("[data-project-outcome]");
 const videoSection = document.querySelector("[data-project-video-section]");
 const videos = document.querySelector("[data-project-videos]");
+const graphicsSection = document.querySelector("[data-project-graphics]");
 const gallery = document.querySelector("[data-project-gallery]");
 const prev = document.querySelector("[data-prev-project]");
 const next = document.querySelector("[data-next-project]");
@@ -41,6 +42,10 @@ const projectVideos = project.videos || (project.video ? [
 const visibleVideos = projectVideos.filter((item) => item.src);
 
 if (visibleVideos.length > 0) {
+  if (project.videoAfterGallery) {
+    gallery.classList.add("has-video-after");
+    gallery.insertAdjacentElement("afterend", videoSection);
+  }
   videoSection.hidden = false;
   videos.innerHTML = visibleVideos
     .map(
@@ -57,7 +62,10 @@ if (visibleVideos.length > 0) {
   videos.innerHTML = "";
 }
 
-gallery.innerHTML = project.gallery
+const galleryImages = project.gallery || [];
+graphicsSection.hidden = galleryImages.length === 0;
+
+gallery.innerHTML = galleryImages
   .map(
     (image, index) => `
       <figure class="gallery-item ${index % 3 === 1 ? "is-portrait" : ""}">
